@@ -7,13 +7,14 @@ app.use(bodyParser.json());
 
 // ----get---------------------
 app.get('/', (req, res) => {
-  res.send('To-do List API is running Taqi...');
+  res.send('To-do List API is running Taq Taq...');
 });
-const PORT =3800;
+const PORT =3900;
 // Verwenden der Task-Routen
 app.use('/', taskRoutes); 
 //---------
-const connectionString= "mongodb+srv://mohammadmohammad:XdZprkTb0U0K6lRw@alex1.684ry.mongodb.net/todoIndex?retryWrites=true&w=majority&appName=Alex1";const TodoSchema = new mongoose.Schema({
+const connectionString= "mongodb+srv://mohammadmohammad:XdZprkTb0U0K6lRw@alex1.684ry.mongodb.net/todoIndex?retryWrites=true&w=majority&appName=Alex1";
+const TodoSchema = new mongoose.Schema({
     name:String,
     completed: Boolean
   });
